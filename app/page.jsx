@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import BrandLogo from "@/components/BrandLogo";
 import LeadershipCard from "@/components/LeadershipCard";
 import SectionHeading from "@/components/SectionHeading";
 import { PillList, SoftCard } from "@/components/ContentBlocks";
@@ -15,23 +17,31 @@ export default function HomePage() {
     <div className="space-y-20 pb-20">
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-organic-grid bg-[length:28px_28px] opacity-35" />
+        <div className="absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-saffron-200/30 blur-3xl" />
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-28">
           <div className="relative z-10">
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-sand-700">
-              ANSER BHARAT GROUP
+            <BrandLogo className="mb-7" />
+            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-saffron-700">
+              Sustainable growth, built with trust and dignity
             </p>
             <h1 className="mt-5 max-w-3xl text-5xl font-semibold tracking-tight text-forest-900 sm:text-6xl lg:text-7xl">
-              Sustainable growth, built with trust and dignity.
+              A peaceful brand for trade, land, service, and living.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-forest-700">
               {site.tagline} A calm umbrella brand spanning trading, real estate,
               seva, and the long-term vision of Anand Sthali.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link href="/about" className="rounded-full bg-forest-700 px-6 py-3 text-sm font-medium text-white shadow-soft transition hover:bg-forest-800">
+              <Link
+                href="/about"
+                className="rounded-full bg-saffron-600 px-6 py-3 text-sm font-medium text-white shadow-soft transition hover:bg-saffron-700"
+              >
                 Explore the group
               </Link>
-              <Link href="/contact" className="rounded-full border border-forest-200 bg-white px-6 py-3 text-sm font-medium text-forest-800 transition hover:border-forest-300 hover:bg-forest-50">
+              <Link
+                href="/contact"
+                className="rounded-full border border-forest-200 bg-white px-6 py-3 text-sm font-medium text-forest-800 transition hover:border-forest-300 hover:bg-forest-50"
+              >
                 Contact the team
               </Link>
             </div>
@@ -40,19 +50,37 @@ export default function HomePage() {
             </div>
           </div>
           <div className="relative z-10">
-            <div className="rounded-[2rem] border border-forest-100 bg-white/80 p-6 shadow-soft backdrop-blur">
-              <div className="rounded-[1.6rem] bg-[linear-gradient(180deg,rgba(88,121,90,0.1),rgba(241,235,219,0.38))] p-6">
-                <div className="text-xs font-semibold uppercase tracking-[0.35em] text-sand-700">
-                  Our focus
+            <div className="rounded-[2rem] border border-forest-100 bg-white/85 p-6 shadow-soft backdrop-blur">
+              <div className="rounded-[1.6rem] bg-[linear-gradient(180deg,rgba(245,171,55,0.10),rgba(241,246,242,0.56))] p-6">
+                <div className="flex items-center justify-between gap-4">
+                  <div>
+                    <div className="text-xs font-semibold uppercase tracking-[0.35em] text-saffron-700">
+                      Brand identity
+                    </div>
+                    <h2 className="mt-3 text-2xl font-semibold text-forest-900">
+                      Round logo, warm palette, calm presence.
+                    </h2>
+                  </div>
+                  <div className="relative h-24 w-24 overflow-hidden rounded-full border-4 border-white bg-white shadow-[0_18px_40px_rgba(34,57,35,0.12)]">
+                    <Image
+                      src="/brand/logo-anser.jpeg"
+                      alt="ANSER BHARAT GROUP logo"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
-                <div className="mt-4 grid gap-4">
+                <div className="mt-6 grid gap-4">
                   {[
                     "Local sourcing with care",
                     "Livelihoods and distribution",
                     "Long-term real estate value",
                     "Spiritual and sustainable living",
                   ].map((item) => (
-                    <div key={item} className="rounded-2xl border border-white/70 bg-white/80 px-4 py-4 text-sm text-forest-800">
+                    <div
+                      key={item}
+                      className="rounded-2xl border border-white/70 bg-white/85 px-4 py-4 text-sm text-forest-800"
+                    >
                       {item}
                     </div>
                   ))}
@@ -71,7 +99,12 @@ export default function HomePage() {
         />
         <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {branches.map((branch) => (
-            <SoftCard key={branch.title} title={branch.title} text={branch.blurb} href={branch.href} />
+            <SoftCard
+              key={branch.title}
+              title={branch.title}
+              text={branch.blurb}
+              href={branch.href}
+            />
           ))}
         </div>
       </section>
@@ -82,8 +115,8 @@ export default function HomePage() {
           title="Respectful leadership, grounded in work and continuity."
         />
         <div className="mt-10 grid gap-6 lg:grid-cols-[0.88fr_1.12fr]">
-          <div className="rounded-[2rem] border border-forest-100 bg-[linear-gradient(180deg,rgba(88,121,90,0.10),rgba(255,255,255,0.88))] p-8 shadow-soft">
-            <div className="text-xs font-semibold uppercase tracking-[0.35em] text-sand-700">
+          <div className="rounded-[2rem] border border-forest-100 bg-[linear-gradient(180deg,rgba(245,171,55,0.10),rgba(255,255,255,0.88))] p-8 shadow-soft">
+            <div className="text-xs font-semibold uppercase tracking-[0.35em] text-saffron-700">
               Board of Members
             </div>
             <h3 className="mt-4 text-3xl font-semibold tracking-tight text-forest-900">
@@ -125,14 +158,17 @@ export default function HomePage() {
             description="One grew through hands-on work across many trades before entering property and group leadership. The other started from scratch and built step by step through perseverance."
           />
         </div>
-        <div className="rounded-[2rem] border border-forest-100 bg-[linear-gradient(180deg,rgba(88,121,90,0.12),rgba(255,255,255,0.82))] p-8 shadow-soft">
+        <div className="rounded-[2rem] border border-forest-100 bg-[linear-gradient(180deg,rgba(245,171,55,0.10),rgba(255,255,255,0.82))] p-8 shadow-soft">
           <div className="grid gap-4">
             {[
               "Sher Singh Ji's journey honors resilience, trust, and gradual success built over years.",
               "Ashish Sharma's story reflects discipline, hard work, and the courage to rise from nothing.",
               "Together, the leadership creates a stable foundation for growth and service.",
             ].map((item) => (
-              <div key={item} className="rounded-2xl border border-white/80 bg-white/85 px-5 py-4 text-sm leading-6 text-forest-800">
+              <div
+                key={item}
+                className="rounded-2xl border border-white/80 bg-white/85 px-5 py-4 text-sm leading-6 text-forest-800"
+              >
                 {item}
               </div>
             ))}

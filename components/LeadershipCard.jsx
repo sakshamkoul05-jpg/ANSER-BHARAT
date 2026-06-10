@@ -1,6 +1,12 @@
 import Image from "next/image";
 
 const accentStyles = {
+  saffron: {
+    frame:
+      "bg-[radial-gradient(circle_at_top,rgba(245,171,55,0.22),transparent_50%),linear-gradient(180deg,rgba(255,249,235,0.98),rgba(255,255,255,0.98))]",
+    glow: "bg-[linear-gradient(135deg,rgba(245,171,55,0.24),rgba(86,120,90,0.10))]",
+    pill: "bg-saffron-50 text-saffron-800 border-saffron-100",
+  },
   forest: {
     frame:
       "bg-[radial-gradient(circle_at_top,rgba(88,121,90,0.22),transparent_50%),linear-gradient(180deg,rgba(241,246,242,0.98),rgba(255,255,255,0.98))]",

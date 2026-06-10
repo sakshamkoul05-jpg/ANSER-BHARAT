@@ -9,6 +9,10 @@ export const metadata = {
     template: `%s | ${site.name}`,
   },
   description: site.description,
+  icons: {
+    icon: "/brand/logo-anser.jpeg",
+    apple: "/brand/logo-anser.jpeg",
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -1,27 +1,16 @@
 import Link from "next/link";
 import { site } from "@/lib/site-data";
+import BrandLogo from "@/components/BrandLogo";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-forest-100/70 bg-[#fcfaf4]/90 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-white/70 bg-[rgba(252,249,241,0.84)] backdrop-blur-2xl">
       <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-4">
-          <Link href="/" className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-forest-700 text-sm font-semibold text-white shadow-soft">
-              AB
-            </div>
-            <div>
-              <div className="text-sm font-semibold tracking-[0.18em] text-forest-800">
-                {site.name}
-              </div>
-              <div className="text-xs uppercase tracking-[0.3em] text-sand-700">
-                Peaceful growth
-              </div>
-            </div>
-          </Link>
+          <BrandLogo />
           <Link
             href="/contact"
-            className="rounded-full bg-forest-700 px-4 py-2 text-sm font-medium text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-forest-800"
+            className="rounded-full bg-saffron-600 px-4 py-2 text-sm font-medium text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-saffron-700"
           >
             Enquire
           </Link>
@@ -31,7 +20,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="whitespace-nowrap rounded-full border border-forest-100 bg-white px-4 py-2 text-sm text-forest-700 shadow-sm transition hover:border-forest-200 hover:text-forest-900"
+              className="whitespace-nowrap rounded-full border border-forest-100 bg-white/90 px-4 py-2 text-sm text-forest-700 shadow-sm transition hover:border-saffron-200 hover:text-forest-900 hover:shadow-md"
             >
               {item.label}
             </Link>
@@ -42,7 +31,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm text-forest-700 transition hover:text-forest-900"
+              className="text-sm text-forest-700 transition hover:text-saffron-700"
             >
               {item.label}
             </Link>

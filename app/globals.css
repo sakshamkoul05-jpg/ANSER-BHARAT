@@ -13,10 +13,11 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at top left, rgba(96, 128, 99, 0.12), transparent 32%),
-    radial-gradient(circle at top right, rgba(198, 170, 106, 0.14), transparent 28%),
-    linear-gradient(180deg, #fcfaf4 0%, #f7f4ec 45%, #fbfaf6 100%);
-  color: #243427;
+    radial-gradient(circle at top left, rgba(96, 128, 99, 0.14), transparent 32%),
+    radial-gradient(circle at 85% 12%, rgba(245, 171, 55, 0.15), transparent 22%),
+    radial-gradient(circle at top right, rgba(198, 170, 106, 0.1), transparent 28%),
+    linear-gradient(180deg, #fffdf8 0%, #f8f4ea 45%, #fffdfa 100%);
+  color: #213024;
   font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif);
 }
 
@@ -29,5 +30,5 @@ a {
 }
 
 ::selection {
-  background: rgba(86, 120, 90, 0.22);
+  background: rgba(245, 171, 55, 0.24);
 }

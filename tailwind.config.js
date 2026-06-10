@@ -4,6 +4,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        saffron: {
+          50: "#fff8e8",
+          100: "#ffefc8",
+          200: "#ffe09b",
+          300: "#ffd06a",
+          400: "#f8b83a",
+          500: "#f29c1f",
+          600: "#e28414",
+          700: "#c56a11",
+          800: "#9c5114",
+          900: "#68340f",
+        },
         forest: {
           50: "#eef6f0",
           100: "#dce8de",
@@ -31,11 +43,11 @@ module.exports = {
       },
       boxShadow: {
         soft: "0 20px 50px rgba(34, 57, 35, 0.08)",
-        glow: "0 24px 60px rgba(87, 120, 90, 0.14)",
+        glow: "0 24px 60px rgba(245, 171, 55, 0.12)",
       },
       backgroundImage: {
         "organic-grid":
-          "radial-gradient(circle at 1px 1px, rgba(83, 117, 88, 0.14) 1px, transparent 0)",
+          "radial-gradient(circle at 1px 1px, rgba(83, 117, 88, 0.12) 1px, transparent 0)",
       },
       fontFamily: {
         serif: ["Georgia", "Cambria", "Times New Roman", "serif"],
