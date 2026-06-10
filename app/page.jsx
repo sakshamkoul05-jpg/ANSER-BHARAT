@@ -55,10 +55,10 @@ export default function HomePage() {
                 <div className="flex items-center justify-between gap-4">
                   <div>
                     <div className="text-xs font-semibold uppercase tracking-[0.35em] text-saffron-700">
-                      Brand identity
+                      Group profile
                     </div>
                     <h2 className="mt-3 text-2xl font-semibold text-forest-900">
-                      Round logo, warm palette, calm presence.
+                      Grounded, polished, and ready for presentation.
                     </h2>
                   </div>
                   <div className="relative h-24 w-24 overflow-hidden rounded-full border-4 border-white bg-white shadow-[0_18px_40px_rgba(34,57,35,0.12)]">
@@ -154,16 +154,16 @@ export default function HomePage() {
         <div className="rounded-[2rem] border border-forest-100 bg-white p-8 shadow-soft">
           <SectionHeading
             eyebrow="Stories"
-            title="Sher Singh Ji and Ashish Sharma represent two powerful journeys of grit."
-            description="One grew through hands-on work across many trades before entering property and group leadership. The other started from scratch and built step by step through perseverance."
+            title="Leadership stories built on resilience, service, and seasoned perspective."
+            description="Sher Singh Ji's journey reflects decades of work across multiple trades, a thoughtful move into property, and a meaningful family-led transfer of stake in ANSER BHARAT SEVA. Ashish Sharma's path shows what it means to build from nothing through persistence and discipline. Azeem Siddique adds broad experience, international exposure, and long-term business insight."
           />
         </div>
         <div className="rounded-[2rem] border border-forest-100 bg-[linear-gradient(180deg,rgba(245,171,55,0.10),rgba(255,255,255,0.82))] p-8 shadow-soft">
           <div className="grid gap-4">
             {[
-              "Sher Singh Ji's journey honors resilience, trust, and gradual success built over years.",
-              "Ashish Sharma's story reflects discipline, hard work, and the courage to rise from nothing.",
-              "Together, the leadership creates a stable foundation for growth and service.",
+              "Sher Singh Ji moved through tailoring, taxi driving, welding, and painting before entering property and building reputation the hard way.",
+              "His transfer of stake in ANSER BHARAT SEVA to his wife and daughter-in-law is a rare gesture of trust, continuity, and family dignity.",
+              "Azeem Siddique brings wide business experience, global exposure, and the depth that comes from building and growing businesses over time.",
             ].map((item) => (
               <div
                 key={item}
