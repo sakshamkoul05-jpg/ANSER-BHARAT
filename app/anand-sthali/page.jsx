@@ -23,10 +23,10 @@ export default function AnandSthaliPage() {
         />
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {anandSthaliPoints.map((item) => (
-            <div key={item} className="rounded-3xl border border-forest-100 bg-white p-7 shadow-soft">
-              <h3 className="text-xl font-semibold text-forest-900">{item}</h3>
+            <div key={item.title} className="rounded-3xl border border-forest-100 bg-white p-7 shadow-soft">
+              <h3 className="text-xl font-semibold text-forest-900">{item.title}</h3>
               <p className="mt-3 text-sm leading-7 text-forest-700">
-                A serene, people-first approach to long-term living and shared growth.
+                {item.text}
               </p>
             </div>
           ))}

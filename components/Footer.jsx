@@ -29,8 +29,7 @@ export default function Footer() {
             Contact
           </div>
           <p className="mt-4 text-sm leading-6 text-forest-700">
-            Dedicated frontend for ANSER BHARAT GROUP. Logo and photos can be
-            dropped in later without changing the structure.
+            For enquiries related to trading, real estate, seva initiatives, or Anand Sthali, connect with the group leadership.
           </p>
           <div className="mt-4 grid gap-2 text-sm">
             {leadership.slice(0, 2).map((person) => (
@@ -42,7 +41,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-forest-100/80 px-4 py-4 text-center text-xs tracking-[0.2em] text-forest-600 sm:px-6 lg:px-8">
-        © {new Date().getFullYear()} {site.name}. Built for calm, sustainable growth.
+        &copy; {new Date().getFullYear()} {site.name}. Built for calm, sustainable growth.
       </div>
     </footer>
   );

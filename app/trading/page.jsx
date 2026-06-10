@@ -25,9 +25,9 @@ export default function TradingPage() {
         <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {tradingProducts.map((product) => (
             <SoftCard
-              key={product}
-              title={product}
-              text="Distributed with a focus on quality, dignity of work, and local value creation."
+              key={product.title}
+              title={product.title}
+              text={product.text}
             />
           ))}
         </div>

@@ -21,9 +21,9 @@ export default function SevaPage() {
         <div className="grid gap-6 lg:grid-cols-2">
           {sevaHighlights.map((item) => (
             <SoftCard
-              key={item}
-              title={item}
-              text="Built to reflect family stewardship, trust, and a steady commitment to people."
+              key={item.title}
+              title={item.title}
+              text={item.text}
             />
           ))}
         </div>

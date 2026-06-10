@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import BrandLogo from "@/components/BrandLogo";
 import LeadershipCard from "@/components/LeadershipCard";
 import SectionHeading from "@/components/SectionHeading";
 import { PillList, SoftCard } from "@/components/ContentBlocks";
@@ -20,7 +19,6 @@ export default function HomePage() {
         <div className="absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-saffron-200/30 blur-3xl" />
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-28">
           <div className="relative z-10">
-            <BrandLogo className="mb-7" />
             <p className="text-xs font-semibold uppercase tracking-[0.4em] text-saffron-700">
               Sustainable growth, built with trust and dignity
             </p>
@@ -58,7 +56,7 @@ export default function HomePage() {
                       Group profile
                     </div>
                     <h2 className="mt-3 text-2xl font-semibold text-forest-900">
-                      Grounded, polished, and ready for presentation.
+                      A group built around products, property, service, and sustainable living.
                     </h2>
                   </div>
                   <div className="relative h-24 w-24 overflow-hidden rounded-full border-4 border-white bg-white shadow-[0_18px_40px_rgba(34,57,35,0.12)]">
@@ -72,10 +70,10 @@ export default function HomePage() {
                 </div>
                 <div className="mt-6 grid gap-4">
                   {[
-                    "Local sourcing with care",
-                    "Livelihoods and distribution",
-                    "Long-term real estate value",
-                    "Spiritual and sustainable living",
+                    "Trading of trusted daily goods through quality-led sourcing",
+                    "Real estate services across purchase, plotting, development, and agency work",
+                    "Seva initiatives supporting farmers, distribution, and work opportunities",
+                    "Anand Sthali vision for peaceful, sustainable, spiritually guided living",
                   ].map((item) => (
                     <div
                       key={item}
